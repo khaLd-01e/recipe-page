@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Young+Serif&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Young+Serif&display=swap"
       rel="stylesheet"
     />
 
@@ -28,10 +32,14 @@
         margin: 0;
         padding: 0;
         background-color: hsl(30, 54%, 90%);
+        font-family: "Outfit", sans-serif;
         font-size: 16px;
-
-        font-weight: 400px;
+        width: 100%;
+        line-height: 2;
+        font-weight: normal;
+        color: hsl(30, 10%, 34%);
       }
+
       main {
         background-color: hsl(0, 0%, 100%);
         margin-top: 5%;
@@ -51,7 +59,6 @@
         border-radius: 25px;
       }
       .alert {
-        font-family: "Open Sans", sans-serif;
         background-color: rgba(220, 100, 140, 0.13);
         padding: 2%;
         border-radius: 20px;
@@ -60,26 +67,46 @@
         color: hsl(332, 51%, 32%);
         margin-left: 2%;
       }
-      .alert li::marker {
-        color: hsl(330, 100%, 98%);
+      li::marker {
+        color: hsl(14, 45%, 36%);
+        font-weight: bold;
       }
       h2 {
         color: hsl(14, 45%, 36%);
+        font-family: "Young Serif", serif;
+        font-weight: normal;
+        font-size: large;
       }
 
-      /*styling the size screen*/
-      main {
-        flex: 0 0 100%;
-        box-sizing: border-box;
+      h1 {
+        font-family: "Young Serif", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: hsl(24, 5%, 18%);
       }
 
-      
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td {
+        padding: 12px 15px;
+        text-align: left;
+      }
+
+      .mid {
+        border-top: 1px solid #dddddd;
+      }
+      .num {
+        font-weight: bold;
+        color: hsl(14, 45%, 36%);
+      }
     </style>
   </head>
   <body>
     <main>
       <section>
-        <div class="">
+        <div class="top">
           <img src="image-omelette.jpeg" alt="Omelette image" class="om-img" />
           <h1>Simple Omelette Recipe</h1>
 
@@ -159,22 +186,24 @@
           additional fillings.
         </p>
         <table>
-          <tr>
-            <th>Calories</th>
-            <th>277kcal</th>
-          </tr>
-          <tr>
-            <td>Carbs</td>
-            <td>0g</td>
-          </tr>
-          <tr>
-            <td>Protein</td>
-            <td>20g</td>
-          </tr>
-          <tr>
-            <td>Fat</td>
-            <td>22g</td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>Calories</td>
+              <td class="num">277kcal</td>
+            </tr>
+            <tr class="mid">
+              <td>Carbs</td>
+              <td class="num">0g</td>
+            </tr>
+            <tr class="mid">
+              <td>Protein</td>
+              <td class="num">20g</td>
+            </tr>
+            <tr class="mid">
+              <td>Fat</td>
+              <td class="num">22g</td>
+            </tr>
+          </tbody>
         </table>
       </section>
     </main>
