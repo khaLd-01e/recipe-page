@@ -3,14 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./assets/images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
       rel="stylesheet"
@@ -22,7 +16,6 @@
 
     <title>Frontend Mentor | Recipe page</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -34,12 +27,13 @@
       body {
         margin: 0;
         padding: 0;
-        background-color: antiquewhite;
+        background-color: hsl(30, 54%, 90%);
+        font-size: 16px;
 
         font-weight: 400px;
       }
       main {
-        background-color: white;
+        background-color: hsl(0, 0%, 100%);
         margin-top: 5%;
         margin-bottom: 5%;
         margin-left: 25%;
@@ -63,26 +57,30 @@
         border-radius: 20px;
       }
       .alert h3 {
-        color: rgba(101, 1, 101, 0.8);
+        color: hsl(332, 51%, 32%);
         margin-left: 2%;
       }
       .alert li::marker {
-        color: rgba(195, 42, 195, 0.892);
+        color: hsl(330, 100%, 98%);
       }
       h2 {
-        color: rgb(109, 37, 17);
+        color: hsl(14, 45%, 36%);
       }
+
+      /*styling the size screen*/
+      main {
+        flex: 0 0 100%;
+        box-sizing: border-box;
+      }
+
+      
     </style>
   </head>
   <body>
     <main>
       <section>
-        <div class>
-          <img
-            src="/assets/images/image-omelette.jpeg"
-            alt="Omelette image"
-            class="om-img"
-          />
+        <div class="">
+          <img src="image-omelette.jpeg" alt="Omelette image" class="om-img" />
           <h1>Simple Omelette Recipe</h1>
 
           <p>
@@ -94,9 +92,9 @@
         <div class="alert">
           <h3>Preparation time</h3>
           <ul>
-            <li>Total: Aproximately 10 minutes</li>
-            <li>Preparation: 5 minutes</li>
-            <li>Cooking: 5 minutes</li>
+            <li><span>Total:</span> Aproximately 10 minutes</li>
+            <li><span>Preparation:</span> 5 minutes</li>
+            <li><span>Cooking:</span> 5 minutes</li>
           </ul>
         </div>
 
